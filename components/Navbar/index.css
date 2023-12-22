@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+* {
+  font-family: "Abril Fatface", serif;
+}
+
+.title-text {
+  color: white;
+
+  font-weight: 900;
+}
+
+span {
+  color: #8c45d4;
+}
+
+.planet1 {
+  animation: myAnim 10s ease-in-out 0s infinite normal forwards;
+}
+.planet2 {
+  animation: myAnim1 20s ease-in-out 20s infinite normal forwards;
+}
+
+.planet3 {
+  animation: myAnim 10s ease-in-out 15s infinite normal forwards;
+}
+.planet4 {
+  animation: myAnim1 20s ease-in-out 20s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+@keyframes myAnim1 {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
+}
